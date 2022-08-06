@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="888.0" style="-fx-background-color: #c5fcf2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="662.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;">
+         <children>
+            <Pane prefHeight="98.0" prefWidth="193.0">
+               <children>
+                  <Label prefHeight="78.0" prefWidth="193.0" text="Easy Mart">
+                     <font>
+                        <Font name="Ink Free" size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="dashboardButton" mnemonicParsing="false" onAction="#dashboardAction" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;" text="Dashboard">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="cashiersButton" mnemonicParsing="false" onAction="#cashiersAction" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;" text="Cashiers">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="allreportsButton" layoutX="10.0" layoutY="108.0" mnemonicParsing="false" onAction="#allreportsAction" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;" text="All Reports">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="membersButton" layoutX="10.0" layoutY="153.0" mnemonicParsing="false" onAction="#membersAction" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;" text="Easy Members">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="itemsButton" layoutX="10.0" layoutY="108.0" mnemonicParsing="false" onAction="#itemAction" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;" text="Items">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="aboutButton" layoutX="10.0" layoutY="198.0" mnemonicParsing="false" onAction="#aboutAction" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;" text="About">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutAction" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;" text="Log out">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="227.0" layoutY="305.0" text="Dashboard Page">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
