@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="888.0" style="-fx-background-color: #c5fcf2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="888.0" style="-fx-background-color: #c5fcf2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easy.mart.items.ItemsController">
    <children>
       <VBox prefHeight="662.0" prefWidth="193.0" style="-fx-background-color: #0f7d69;">
          <children>
@@ -70,25 +70,25 @@
       <Text layoutX="244.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pack Size" />
       <Text layoutX="246.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY On Hand" />
       <Text layoutX="246.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch ID" />
-      <TextField layoutX="458.0" layoutY="90.0" prefHeight="46.0" prefWidth="182.0" promptText="Description" />
-      <TextField layoutX="245.0" layoutY="101.0" />
-      <TextField layoutX="245.0" layoutY="194.0" />
-      <TextField layoutX="246.0" layoutY="253.0" />
-      <TextField layoutX="247.0" layoutY="312.0" />
+      <TextField fx:id="itemDescription" layoutX="458.0" layoutY="90.0" prefHeight="46.0" prefWidth="182.0" promptText="Description" />
+      <TextField fx:id="itemCode" layoutX="245.0" layoutY="101.0" />
+      <TextField fx:id="packSize" layoutX="245.0" layoutY="194.0" />
+      <TextField fx:id="quantityOnHand" layoutX="246.0" layoutY="253.0" />
+      <TextField fx:id="batchID" layoutX="247.0" layoutY="312.0" />
       <Text layoutX="464.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Price" />
-      <TextField layoutX="458.0" layoutY="194.0" prefHeight="26.0" prefWidth="182.0" />
-      <Button layoutX="489.0" layoutY="284.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="111.0" text="ADD" />
-      <Button layoutX="738.0" layoutY="83.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="99.0" text="Search" />
-      <Button layoutX="738.0" layoutY="261.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="99.0" text="Delete" />
-      <Button layoutX="738.0" layoutY="171.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="99.0" text="Update" />
-      <TableView layoutX="207.0" layoutY="366.0" prefHeight="284.0" prefWidth="674.0">
+      <TextField fx:id="unitPrice" layoutX="458.0" layoutY="194.0" prefHeight="26.0" prefWidth="182.0" />
+      <Button fx:id="addItemButton" layoutX="489.0" layoutY="284.0" mnemonicParsing="false" onAction="#addItemButtonAction" prefHeight="46.0" prefWidth="111.0" text="ADD" />
+      <Button fx:id="searchItemButton" layoutX="738.0" layoutY="83.0" mnemonicParsing="false" onAction="#searchItemButtonAction" prefHeight="46.0" prefWidth="99.0" text="Search" />
+      <Button fx:id="deleteItemButton" layoutX="738.0" layoutY="261.0" mnemonicParsing="false" onAction="#deleteItemButtonAction" prefHeight="46.0" prefWidth="99.0" text="Delete" />
+      <Button fx:id="updateItemButton" layoutX="738.0" layoutY="171.0" mnemonicParsing="false" onAction="#updateItemButtonAction" prefHeight="46.0" prefWidth="99.0" text="Update" />
+      <TableView fx:id="itemTable" layoutX="207.0" layoutY="366.0" prefHeight="284.0" prefWidth="674.0">
          <columns>
-            <TableColumn prefWidth="92.0" text="Item Code" />
-            <TableColumn prefWidth="207.20001220703125" text="Description" />
-            <TableColumn prefWidth="85.5999755859375" text="Pack Size" />
-            <TableColumn prefWidth="90.4000244140625" text="QTY" />
-            <TableColumn prefWidth="93.60003662109375" text="Batch id" />
-            <TableColumn prefWidth="96.8001708984375" text="Unit Price" />
+            <TableColumn fx:id="itemCodeInTable" prefWidth="92.0" text="Item Code" />
+            <TableColumn fx:id="itemDescriptionInTable" prefWidth="207.20001220703125" text="Description" />
+            <TableColumn fx:id="itemPackSizeInTable" prefWidth="85.5999755859375" text="Pack Size" />
+            <TableColumn fx:id="itemQuantityInTable" prefWidth="90.4000244140625" text="QTY" />
+            <TableColumn fx:id="itemBatchInTable" prefWidth="93.60003662109375" text="Batch id" />
+            <TableColumn fx:id="itemUnitPriceInTable" prefWidth="96.8001708984375" text="Unit Price" />
          </columns>
       </TableView>
    </children>
