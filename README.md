@@ -98,7 +98,7 @@ Easy_Mart/
 
 ### Clone the repository:
 ```
-git clone https://github.com/yourusername/easy-mart.git
+git clone https://github.com/mhtafhim/easy-mart.git
 ```
 
 ### Open the project in NetBeans IDE:
